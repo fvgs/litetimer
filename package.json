@@ -1,0 +1,33 @@
+{
+	"name": "litetimer",
+	"version": "0.0.0",
+	"description": "Simple command-line timer",
+	"author": "Felipe Vargas <felipe@fvgs.ai> (fvgs.ai)",
+	"repository": "fvgs/litetimer",
+	"homepage": "https://github.com/fvgs/litetimer#readme",
+	"bugs": "https://github.com/fvgs/litetimer/issues",
+	"license": "MIT",
+	"bin": {
+		"t": "./bin/t"
+	},
+	"keywords": [
+		"lite",
+		"timer",
+		"time",
+		"countdown",
+		"tick",
+		"beep",
+		"simple",
+		"command-line",
+		"commandline",
+		"command",
+		"line"
+	],
+	"dependencies": {
+		"calligraphy": "^0.1.1",
+		"commander": "^2.12.2",
+		"hms-parse": "^1.0.0",
+		"lodash": "^4.17.4",
+		"timercore": "^1.0.2"
+	}
+}
