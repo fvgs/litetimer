@@ -25,6 +25,7 @@
 	],
 	"dependencies": {
 		"calligraphy": "^0.1.1",
+		"cli-cursor": "^2.1.0",
 		"commander": "^2.12.2",
 		"hms-parse": "^1.0.0",
 		"lodash": "^4.17.4",
