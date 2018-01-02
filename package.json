@@ -1,6 +1,6 @@
 {
 	"name": "litetimer",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Simple command-line timer",
 	"author": "Felipe Vargas <felipe@fvgs.ai> (fvgs.ai)",
 	"repository": "fvgs/litetimer",
