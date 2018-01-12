@@ -1,6 +1,6 @@
 const {stdin} = process
 
-module.exports = (onPause, onQuit) => {
+module.exports = (onPause, onQuit, onExit) => {
 	stdin.setRawMode(true)
 	stdin.setEncoding('utf8')
 
@@ -13,8 +13,10 @@ module.exports = (onPause, onQuit) => {
 			case '\x04':
 				onQuit()
 				stdin.pause()
+				onExit()
 				break
 			case '\x03':
+				onExit()
 				process.exit()
 				break
 		}
