@@ -10,6 +10,8 @@ $ npm install -g litetimer
 
 ## Usage
 
+Run the `t` command with any assortment of hours, minutes, or seconds as arguments
+
 ```
 $ t 1h 45m 10s
 $ t 2h
@@ -17,3 +19,9 @@ $ t 15m
 $ t 30s
 $ t 1s 2h 3m 4m 5h 6m 7s
 ```
+
+#### Press:
+
+**`p`** to pause and unpause
+
+**`q`** to quit
