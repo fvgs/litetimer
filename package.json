@@ -21,7 +21,8 @@
 		"command-line",
 		"commandline",
 		"command",
-		"line"
+		"line",
+		"pomodoro"
 	],
 	"dependencies": {
 		"calligraphy": "^0.1.1",
