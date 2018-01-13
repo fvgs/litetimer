@@ -18,5 +18,9 @@ module.exports = () => {
 		.on('--help', () => console.log(exampleText))
 		.parse(argv)
 
+	if (!hmsValues) {
+		args.help()
+	}
+
 	return hms.toSeconds(hmsValues)
 }
