@@ -1,7 +1,6 @@
 const {cursorTo, clearScreenDown} = require('readline')
 const {EOL} = require('os')
 const hms = require('hms-parse')
-const zipWith = require('lodash/zipWith')
 const {
 	zero,
 	one,
@@ -40,11 +39,16 @@ const INDENT = ' '.repeat(8)
 const PADDING = EOL.repeat(3)
 const SPACING = ' '.repeat(2)
 
-const getLine = (...segments) => INDENT + segments.join(SPACING)
+const zipWith = (a, f) =>
+	(a[0].reduce((acc, _, i) =>
+		acc.concat([a.reduce((out, inner) =>
+			out.concat(inner[i]), [])]), [])).map(f)
+
+const getLine = segments => INDENT + segments.join(SPACING)
 
 const getOutput = hmsString => {
 	const characters = [...hmsString].map(val => map[val])
-	const lines = zipWith(...characters, getLine)
+	const lines = zipWith(characters, getLine)
 	return PADDING + lines.join(EOL) + PADDING
 }
 
