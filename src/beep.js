@@ -2,7 +2,7 @@ const {join, dirname} = require('path')
 const Player = require('play-sound')
 
 const {stdin, stdout} = process
-const audio = join(dirname(__dirname), 'haiku.flac')
+const audio = join(dirname(__dirname), 'haiku.mp3')
 
 const beep = () => {
 	const player = Player()
